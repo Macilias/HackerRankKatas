@@ -178,7 +178,7 @@ public class SolutionTest {
 
     @Test
     public void testStack1 () {
-        Solution.Stack stack = new Solution.Stack();
+        StacksSolution.Stack stack = new StacksSolution.Stack();
         Assert.assertTrue(stack.empty());
         stack.push('a');
         Assert.assertFalse(stack.empty());
@@ -190,7 +190,7 @@ public class SolutionTest {
 
     @Test
     public void testStack2 () {
-        Solution.Stack stack = new Solution.Stack();
+        StacksSolution.Stack stack = new StacksSolution.Stack();
         stack.push('a');
         stack.push('b');
         stack.push('c');
@@ -222,7 +222,7 @@ public class SolutionTest {
             System.out.println(in);
             String re = result[i].trim();
             System.out.println(re);
-            if (Solution.isBalanced(in)) {
+            if (StacksSolution.isBalanced(in)) {
                 Assert.assertTrue(re.equals("YES"));
             } else {
                 Assert.assertTrue(re.equals("NO"));

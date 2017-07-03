@@ -3,7 +3,7 @@ package problem;
 import java.util.*;
 
 /**
- * Solution to the Problem:
+ * StacksSolution to the Problem:
  * There's a room with a TV and people are coming in and out to watch it. The TV is on only when there's at least a person in the room.
  * For each person that comes in, we record the start and end time. We want to know for how long the TV has been on. In other words:
  * Given a list of time intervals, write a function that calculates the total amount of time covered by the intervals.
@@ -29,13 +29,9 @@ public class TVUsage {
 
             // here was a bug: i should be not <= but only < -> otherwise 1-4 is 4
             for (int i = interval.start; i < interval.end; i++) {
-
                 set.add(i);
-
             }
-
         }
-
         return set.size();
 
     }
