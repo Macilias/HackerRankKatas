@@ -5,7 +5,7 @@ package arraysAndStrings;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class Chap1_4 {
+public class Chap1_4_ReplaceSpace {
 
     public static String replaceSpace(String string) {
         char[] source = string.toCharArray();

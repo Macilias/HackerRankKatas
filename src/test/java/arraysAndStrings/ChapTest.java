@@ -12,19 +12,19 @@ public class ChapTest {
 
     @Test
     public void test1_1 () {
-        Assert.assertTrue(Chap1_1.allUnique("abcd"));
-        Assert.assertFalse(Chap1_1.allUnique("abcdd"));
-        Assert.assertTrue(Chap1_1.allUnique("bcde"));
-        Assert.assertFalse(Chap1_1.allUnique("000"));
-        Assert.assertTrue(Chap1_1.allUnique("012"));
+        Assert.assertTrue(Chap1_1_AllUnique.allUnique("abcd"));
+        Assert.assertFalse(Chap1_1_AllUnique.allUnique("abcdd"));
+        Assert.assertTrue(Chap1_1_AllUnique.allUnique("bcde"));
+        Assert.assertFalse(Chap1_1_AllUnique.allUnique("000"));
+        Assert.assertTrue(Chap1_1_AllUnique.allUnique("012"));
     }
 
     @Test
     public void test1_3 () {
-        Assert.assertTrue(Chap1_3.isPermutation("abc", "bca"));
-        Assert.assertFalse(Chap1_3.isPermutation("ab", "cba"));
-        Assert.assertTrue(Chap1_3.isPermutation("cba", "abc"));
-        Assert.assertFalse(Chap1_3.isPermutation("efg", "abc"));
+        Assert.assertTrue(Chap1_3_PermutationTest.isPermutation("abc", "bca"));
+        Assert.assertFalse(Chap1_3_PermutationTest.isPermutation("ab", "cba"));
+        Assert.assertTrue(Chap1_3_PermutationTest.isPermutation("cba", "abc"));
+        Assert.assertFalse(Chap1_3_PermutationTest.isPermutation("efg", "abc"));
     }
 
     @Test
@@ -37,8 +37,8 @@ public class ChapTest {
 
     @Test
     public void test1_4 () {
-        Assert.assertEquals("%20abc", Chap1_4.replaceSpace(" abc"));
-        Assert.assertEquals("abc%20", Chap1_4.replaceSpace("abc "));
-        Assert.assertEquals("Mr%20John%20Smith", Chap1_4.replaceSpace("Mr John Smith"));
+        Assert.assertEquals("%20abc", Chap1_4_ReplaceSpace.replaceSpace(" abc"));
+        Assert.assertEquals("abc%20", Chap1_4_ReplaceSpace.replaceSpace("abc "));
+        Assert.assertEquals("Mr%20John%20Smith", Chap1_4_ReplaceSpace.replaceSpace("Mr John Smith"));
     }
 }

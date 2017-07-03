@@ -6,14 +6,14 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static treesAndGraphs.BTree.*;
+import static treesAndGraphs.BTree_TestIfBFS.*;
 
 /**
  * Some Description
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class BTreeTest {
+public class BTree_TestIfBFSTest {
 
     String testCase1 = "1 2 4 3 5 6 7 7";
     String testCase2 = "15 1 16 2 17 0";

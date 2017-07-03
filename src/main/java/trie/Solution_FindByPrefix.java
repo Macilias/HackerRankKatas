@@ -2,7 +2,7 @@ package trie;
 
 import java.util.*;
 
-public class Solution {
+public class Solution_FindByPrefix {
 
     Trie trie = new Trie();
 
@@ -74,7 +74,7 @@ public class Solution {
         }
     }
 
-    public static Optional<String> runCommand (Solution solution, String op, String contact) {
+    public static Optional<String> runCommand (Solution_FindByPrefix solution, String op, String contact) {
         switch(op) {
             case "add":  solution.add(contact); return Optional.empty();
             case "find": return Optional.of(String.valueOf(solution.find(contact)));
@@ -84,14 +84,14 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        Solution solution = new Solution();
+        Solution_FindByPrefix solution = new Solution_FindByPrefix();
 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         for(int a0 = 0; a0 < n; a0++){
             String op = in.next();
             String contact = in.next();
-            Optional<String> s = Solution.runCommand(solution, op, contact);
+            Optional<String> s = Solution_FindByPrefix.runCommand(solution, op, contact);
             if (s.isPresent()) {
                 System.out.println(s.get());
             }

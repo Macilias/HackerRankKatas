@@ -1,19 +1,25 @@
 package quesAndStacks;
 
 import java.io.*;
-        import java.util.*;
-        import java.text.*;
-        import java.math.*;
-        import java.util.regex.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-public class Solution {
+/*
+    taken from
+    https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
+ */
+public class Solution_RunningMedian {
 
     public static class MyQueue<T> {
         Stack<T> stackNewestOnTop = new Stack<>();
         Stack<T> stackOldestOnTop = new Stack<>();
 
         public void enqueue(T value) { // Push onto newest stack
-
+            String p = new String();
+            char[] chars = p.toCharArray();
+            Arrays.sort(chars);
         }
 
         public T peek() {

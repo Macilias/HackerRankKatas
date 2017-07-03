@@ -10,7 +10,7 @@ import java.util.Optional;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class SolutionTest {
+public class Solution_FindByPrefixTest {
 
     String problem0 = "add hack\n" +
                     "add hackerrank\n" +
@@ -41,7 +41,7 @@ public class SolutionTest {
 
     @Test
     public void testProblem0() {
-        Solution solution = new Solution();
+        Solution_FindByPrefix solution = new Solution_FindByPrefix();
         String[] lines = problem0.split(System.getProperty("line.separator"));
         String resultProblem0 = testLines(solution, lines);
         System.out.println(resultProblem0);
@@ -50,18 +50,18 @@ public class SolutionTest {
 
     @Test
     public void testProblem1() {
-        Solution solution = new Solution();
+        Solution_FindByPrefix solution = new Solution_FindByPrefix();
         String[] lines = problem1.split(System.getProperty("line.separator"));
         String resultProbelem1 = testLines(solution, lines);
         System.out.println(resultProbelem1);
         Assert.assertEquals(result1.trim(), resultProbelem1.trim());
     }
 
-    private String testLines(Solution solution, String[] lines) {
+    private String testLines(Solution_FindByPrefix solution, String[] lines) {
         StringBuffer result = new StringBuffer();
         for (String line : lines) {
             String[] split = line.split(" ");
-            Optional<String> s = Solution.runCommand(solution, split[0], split[1]);
+            Optional<String> s = Solution_FindByPrefix.runCommand(solution, split[0], split[1]);
             if (s.isPresent()) {
                 result.append(s.get() + "\n");
             }

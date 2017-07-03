@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- * Some Description
+ * This is a prove that a RuntimeException get catched
  *
  * @author maciej.niemczyk@voipfuture.com
  */

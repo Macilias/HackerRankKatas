@@ -6,7 +6,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class StacksSolution {
+public class Solution_BracketStack {
 
     static class Node {
         char data;

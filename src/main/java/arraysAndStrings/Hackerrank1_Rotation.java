@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class Hackerrank1 {
+public class Hackerrank1_Rotation {
 
     public static void rotate(int[] array, int rotationCount) {
 

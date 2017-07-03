@@ -9,7 +9,7 @@ import java.util.Set;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class chap2_1 {
+public class chap2_1_RemoveDuplicates {
 
     public static <T> DoubleLinkedList<T> removeDuplicatesWithBuffer(DoubleLinkedList<T> source) {
         

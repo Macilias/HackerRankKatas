@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class Chap1_3 {
+public class Chap1_3_PermutationTest {
 
     public static boolean isPermutation(String a, String b) {
 

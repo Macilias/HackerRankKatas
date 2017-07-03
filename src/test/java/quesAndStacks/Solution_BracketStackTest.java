@@ -10,7 +10,7 @@ import java.security.InvalidParameterException;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class SolutionTest {
+public class Solution_BracketStackTest {
 
     final String problem0 = "}(]}){";
 
@@ -178,7 +178,7 @@ public class SolutionTest {
 
     @Test
     public void testStack1 () {
-        StacksSolution.Stack stack = new StacksSolution.Stack();
+        Solution_BracketStack.Stack stack = new Solution_BracketStack.Stack();
         Assert.assertTrue(stack.empty());
         stack.push('a');
         Assert.assertFalse(stack.empty());
@@ -190,7 +190,7 @@ public class SolutionTest {
 
     @Test
     public void testStack2 () {
-        StacksSolution.Stack stack = new StacksSolution.Stack();
+        Solution_BracketStack.Stack stack = new Solution_BracketStack.Stack();
         stack.push('a');
         stack.push('b');
         stack.push('c');
@@ -222,7 +222,7 @@ public class SolutionTest {
             System.out.println(in);
             String re = result[i].trim();
             System.out.println(re);
-            if (StacksSolution.isBalanced(in)) {
+            if (Solution_BracketStack.isBalanced(in)) {
                 Assert.assertTrue(re.equals("YES"));
             } else {
                 Assert.assertTrue(re.equals("NO"));

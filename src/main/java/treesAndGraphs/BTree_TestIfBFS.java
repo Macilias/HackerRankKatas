@@ -3,11 +3,14 @@ package treesAndGraphs;
 import java.util.List;
 
 /**
- * Some Description
+ * For the purposes of this challenge, we define a binary search tree to be a binary tree with the following ordering properties:
+ *
+ * The  value of every node in a node's left subtree is less than the data value of that node.
+ * The  value of every node in a node's right subtree is greater than the data value of that node.
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class BTree {
+public class BTree_TestIfBFS {
 
     public static <T extends Comparable<T>> boolean recursiveBTreeTest(Node<T> node, T min, T max) {
 

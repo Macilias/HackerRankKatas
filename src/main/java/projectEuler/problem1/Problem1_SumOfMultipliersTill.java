@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class Problem1 {
+public class Problem1_SumOfMultipliersTill {
 
     public static int getMultipliersOf(List<Integer> integers, int till) {
 

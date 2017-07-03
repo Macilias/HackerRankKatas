@@ -2,7 +2,7 @@ package arraysAndStrings;
 
 import linkedLists.DoubleLinkedList;
 import linkedLists.Node;
-import linkedLists.chap2_1;
+import linkedLists.chap2_1_RemoveDuplicates;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ public class ListTest {
 
     @Test
     public void testUniquesWithBuffer () {
-        DoubleLinkedList<Integer> list = chap2_1.removeDuplicatesWithBuffer(getIntegers(1, 2, 2));
+        DoubleLinkedList<Integer> list = chap2_1_RemoveDuplicates.removeDuplicatesWithBuffer(getIntegers(1, 2, 2));
         Integer[] expected = {1,2};
         Assert.assertArrayEquals(expected, list.toArray());
     }

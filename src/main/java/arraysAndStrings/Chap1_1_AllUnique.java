@@ -8,7 +8,7 @@ import java.util.Set;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class Chap1_1 {
+public class Chap1_1_AllUnique {
 
     public static boolean allUnique(String source) {
 

@@ -1,6 +1,6 @@
 package treesAndGraphs;
 
-import treesAndGraphs.BTree.Node;
+import treesAndGraphs.BTree_TestIfBFS.Node;
 
 public class BTreePrinterTest {
 
