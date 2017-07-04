@@ -1,4 +1,4 @@
-package quesAndStacks;
+package heaps;
 
 import java.io.*;
 import java.util.*;
