@@ -1,4 +1,4 @@
-package problem;
+package interviews;
 
 import java.util.*;
 
@@ -19,7 +19,7 @@ import java.util.*;
  *
  * @author maciej.niemczyk@voipfuture.com
  */
-public class TVUsage {
+public class FB_TVUsage {
 
     public static int calculateUsage(List<Interval> intervals) {
 
@@ -52,9 +52,9 @@ public class TVUsage {
     public static void main(String[] args) {
 
 
-        System.out.println(TVUsage.calculateUsage(Arrays.asList(new Interval(1, 4), new Interval(2, 3)))); // 3
-        System.out.println(TVUsage.calculateUsage(Arrays.asList(new Interval(4, 6), new Interval(1, 2)))); // 3
-        System.out.println(TVUsage.calculateUsage(Arrays.asList(new Interval(1, 4), new Interval(6, 8),
+        System.out.println(FB_TVUsage.calculateUsage(Arrays.asList(new Interval(1, 4), new Interval(2, 3)))); // 3
+        System.out.println(FB_TVUsage.calculateUsage(Arrays.asList(new Interval(4, 6), new Interval(1, 2)))); // 3
+        System.out.println(FB_TVUsage.calculateUsage(Arrays.asList(new Interval(1, 4), new Interval(6, 8),
                 new Interval(2, 4), new Interval(7, 9), new Interval(10, 15)))); // 11
 
     }
